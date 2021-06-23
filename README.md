@@ -1,5 +1,5 @@
 # ReTnUh-J.github.io
-# CopyRight retnuh-j.gitbub.io
+# CopyRight retnuh-j.github.io
 
 A Hacking News, Tech, Tools and Cybersecurity Platform. Soon will have its own domain and hosting service.
 
