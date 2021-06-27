@@ -121,6 +121,52 @@
         </header>
         <main> 
             <section>
+                <h2>Nobelium hackers accessed Microsoft customer support tools #31</h2>
+                <p>Microsoft says they have discovered new attacks conducted by the Russian state-sponsored Nobelium hacking group, including a hacked Microsoft support agent's computer that exposed customer's subscription information.
+
+                    Nobelium is Microsoft's name for a state-sponsored hacking group believed to be operating out of Russia responsible for the SolarWinds supply-chain attacks. 
+                    
+                    In a new blog post published Friday night, Microsoft states that the hacking group has been conducting password spray and brute-force attacks to gain access to corporate networks.
+                    
+                    Password spray and brute force attacks are similar in that they both attempt to gain unauthorized accounts to an online account by guessing a password. However, password spray attacks will attempt to use the same passwords across multiple accounts simultaneously to evade defenses. In contrast, brute force attacks repeatedly target a single account with different password attempts.
+                    
+                    Microsoft says that Nobelium's recent attacks have been mostly unsuccessful. However, they know of three entities that were breached by Nobelium in these attacks.
+                    
+                    "This activity was targeted at specific customers, primarily IT companies (57%), followed by government (20%), and smaller percentages for non-governmental organizations and think tanks, as well as financial services," Microsoft said in a blog post about the attacks.
+                    
+                    "The activity was largely focused on US interests, about 45%, followed by 10% in the UK, and smaller numbers from Germany and Canada.  In all, 36 countries were targeted." During the investigation into the attacks, Microsoft also detected an information-stealing trojan on a Microsoft customer support agent's computer that provided access to "basic account information" for a limited number of customers.
+
+                    Nobelium used this customer information in targeted phishing attacks against Microsoft customers.
+                    
+                    Microsoft reported these attacks after Reuters obtained an email sent to affected customers warning them that the threat actors gained access to information about their Microsoft Services subscriptions.
+                    
+                    "A sophisticated Nation-State associated actor that Microsoft identifies as NOBELLIUM accessed Microsoft customer support tools to review information regarding your Microsoft Services subscriptions," read the Microsoft email obtained by Reuters. </p>
+            </section>
+            <section>
+                <h2>NFC flaws let researchers hack an ATM by waving a phone #30</h2>
+                <p>Flaws in card-reader technology can wreak havoc with point-of-sale systems and more.
+                    For years, security researchers and cybercriminals have hacked ATMs by using all possible avenues to their innards, from opening a front panel and sticking a thumb drive into a USB port to drilling a hole that exposes internal wiring. Now, one researcher has found a collection of bugs that allow him to hack ATMs—along with a wide variety of point-of-sale terminals—in a new way: with a wave of his phone over a contactless credit card reader.
+
+                    Josep Rodriguez, a researcher and consultant at security firm IOActive, has spent the last year digging up and reporting vulnerabilities in the so-called near-field communications reader chips used in millions of ATMs and point-of-sale systems worldwide. NFC systems are what let you wave a credit card over a reader—rather than swipe or insert it—to make a payment or extract money from a cash machine. You can find them on countless retail store and restaurant counters, vending machines, taxis, and parking meters around the globe. Now Rodriguez has built an Android app that allows his smartphone to mimic those credit card radio communications and exploit flaws in the NFC systems' firmware. With a wave of his phone, he can exploit a variety of bugs to crash point-of-sale devices, hack them to collect and transmit credit card data, invisibly change the value of transactions, and even lock the devices while displaying a ransomware message. Rodriguez says he can even force at least one brand of ATMs to dispense cash—though that "jackpotting" hack only works in combination with additional bugs he says he has found in the ATMs' software. He declined to specify or disclose those flaws publicly due to nondisclosure agreements with the ATM vendors.
+
+                    "You can modify the firmware and change the price to one dollar, for instance, even when the screen shows that you're paying 50 dollars. You can make the device useless, or install a kind of ransomware. There are a lot of possibilities here," says Rodriguez of the point-of-sale attacks he discovered. "If you chain the attack and also send a special payload to an ATM's computer, you can jackpot the ATM—like cash out, just by tapping your phone." Rodriguez says he alerted the affected vendors—which include ID Tech, Ingenico, Verifone, Crane Payment Innovations, BBPOS, Nexgo, and the unnamed ATM vendor—to his findings between seven months and a year ago. Even so, he warns that the sheer number of affected systems and the fact that many point-of-sale terminals and ATMs don't regularly receive software updates—and in many cases require physical access to update—mean that many of those devices likely remain vulnerable. "Patching so many hundreds of thousands of ATMs physically, it's something that would require a lot of time," Rodriguez says.
+
+                    As a demonstration of those lingering vulnerabilities, Rodriguez shared a video with WIRED in which he waves a smartphone over the NFC reader of an ATM on the street in Madrid, where he lives, and causes the machine to display an error message. The NFC reader appears to crash and no longer reads his credit card when he next touches it to the machine. (Rodriguez asked that WIRED not publish the video for fear of legal liability. He also didn't provide a video demo of a jackpotting attack because, he says, he could only legally test it on machines obtained as part of IOActive's security consulting to the affected ATM vendor, with whom IOActive has signed an NDA.)
+
+                    The findings are "excellent research into the vulnerability of software running on embedded devices," says Karsten Nohl, the founder of security firm SRLabs and a well-known firmware hacker, who reviewed Rodriguez's work. But Nohl points to a few drawbacks that reduce its practicality for real-world thieves. A hacked NFC reader would only be able to steal mag-stripe credit card data, not the victim's PIN or the data from EMV chips. And the fact that the ATM cashout trick would require an extra, distinct vulnerability in a target ATM's code is no small caveat, Nohl says.
+
+                    But security researchers like the late IOActive hacker Barnaby Jack and the team at Red Balloon Security have been able to uncover those ATM vulnerabilities for years and have even shown that hackers can trigger ATM jackpotting remotely. Red Balloon CEO and chief scientist Ang Cui says that he's impressed by Rodriguez's findings and has little doubt that hacking the NFC reader could lead to dispensing cash in many modern ATMs, despite IOActive withholding some details of its attack. "I think it's very plausible that once you have code execution on any of these devices, you should be able to get right to the main controller, because that thing is full of vulnerabilities that haven't been fixed for over a decade," Cui says. "From there," he adds, "you can absolutely control the cassette dispenser" that holds and releases cash to users. Rodriguez, who has spent years testing the security of ATMs as a consultant, says he began exploring a year ago whether ATMs' contactless card readers—most often sold by the payment technology firm ID Tech—could serve as an in-road to hacking them. He began buying NFC readers and point-of-sale devices from eBay and soon discovered that many of them suffered from the same security flaw: they didn't validate the size of the data packet sent via NFC from a credit card to the reader, known as an application protocol data unit or APDU. By using a custom app to send a carefully crafted APDU from his NFC-enabled Android phone that's hundreds of times larger than the reader expects, Rodriguez was able to trigger a "buffer overflow," a decades-old type of software vulnerability that allows a hacker to corrupt a target device's memory and run their own code.
+
+                    When WIRED reached out to the affected companies, ID Tech, BBPOS, and Nexgo didn't respond to requests for comment, and the ATM Industry Association declined to comment. Ingenico responded in a statement that, due to its security mitigations, Rodriguez's buffer overflow technique could only crash its devices, not gain code execution on them, but that, "considering the inconvenience and the impact for our customers," it issued a fix anyway. (Rodriguez counters that he's doubtful that Ingenico's mitigations would actually prevent code execution, but he hasn't actually created a proof of concept to demonstrate this.)
+
+                    Verifone, for its part, said that it had found and fixed the point-of-sale vulnerabilities Rodriguez highlighted in 2018 long before he had reported them. But Rodriguez argues that this only demonstrates the lack of consistent patching in the company's devices; he says he tested his NFC techniques on a Verifone device in a restaurant last year and found that it remained vulnerable.
+
+                    After keeping many of his findings under wraps for a full year, Rodriguez plans to share the technical details of the vulnerabilities in a webinar in the coming weeks, in part to push customers of the affected vendors to implement the patches that the companies have made available. But he also wants to call attention to the abysmal state of embedded device security more broadly. He was shocked to find that vulnerabilities as simple as buffer overflows have lingered in so many commonly used devices—ones that handle cash and sensitive financial information, no less.
+
+                    "These vulnerabilities have been present in firmware for years, and we’re using these devices daily to handle our credit cards, our money," he says. "They need to be secured."</p>
+            </section>
+            <hr>
+            <section>
                 <h2>A New Attack on AI-driven Facial Recognition Systems #29</h2>
                 <p>Researchers from Adversa have developed an attack technique named Adversarial Octopus that could perform a targeted attack on facial recognition systems. It impacts several current AI-driven facial recognition tools, exposing them to severe attacks. Researchers developed this new attack on AI-driven facial recognition systems that can change photos in such a way that an AI system will recognize a different person or as any person of choice.
 
@@ -674,11 +720,11 @@ The Associated Press reported that Iran blamed the U.S. government for the websi
             <hr>
             <h3>Recent Posts</h3>
             <ul>
-                <li><a href="#"></a>A New Attack on AI-driven Facial Recognition Systems #29</li>
-                <li><a href="#"></a>Malicious Cryptominers Target Software Repositories to Burn a Hole in Your Wallet #28</li>
-                <li><a href="#"></a>Microsoft says new breach discovered in probe of suspected SolarWinds hackers #27</li>
-                <li><a href="#"></a>A Hacker Is Remotely Wiping People’s Internet-Connected Hard Drives #26</li>
                 <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a>Nobelium hackers accessed Microsoft customer support tools #31</li>
+                <li><a href="#"></a>NFC flaws let researchers hack an ATM by waving a phone #30</li>
             </ul>
         </aside>
         <footer>
