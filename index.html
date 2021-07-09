@@ -121,6 +121,68 @@
         </header>
         <main> 
             <section>
+                <h2> Babuk Ransomware is Back in Action #38</h2>
+                <p>The Babuk ransomware gang appears to be back in action as it was found targeting and encrypting multiple corporate networks. The recent attack on the Metropolitan Police Department, followed by increased pressure from law enforcement could be the reason behind its exit from the ransomware business. Certainly, Babuk has not given up the encryption-based extortion game.
+
+                    Earlier, the operators had announced that they were planning to release the malware code to the public. However, they have released a new version of their malware, indicating that they wish to get back into the ransomware business.
+                    The gang made a comeback after announcing its departure from the ransomware business in favor of data theft extortion a few weeks ago.
+                    The gang is now using a new version of its file-encrypting malware disguised as PayLoad Bin, and its news leak site showed little activity recently.
+                    Meanwhile, in a recent ransomware attack, the leaked Babuk builder was used. In this attack, the attackers demanded .006 bitcoin as ransom.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Morgan Stanley reports data breach after vendor Accellion hack #37</h2>
+                <p>Investment banking firm Morgan Stanley has reported a data breach after attackers stole personal information belonging to its customers by hacking into the Accellion FTA server of a third-party vendor.
+
+                    Morgan Stanley is a leading global financial services firm providing investment banking, securities, wealth and investment management services worldwide.
+                    
+                    The American multinational company's clients include corporations, governments, institutions, and individuals in more than 41 countries. Guidehouse, a third-party vendor that provides account maintenance services to Morgan Stanley's StockPlan Connect business, notified the investment banking company in May 2021 that attackers hacked its Accellion FTA server to steal information belonging to Morgan Stanley stock plan participants.
+
+                    The Guidehouse server was breached by exploiting an Accellion FTA vulnerability in January before the vendor patched it within five days of the fix becoming available.
+                    
+                    Guidehouse discovered the breach in March and the impact to Morgan Stanley customers in May, when it notified the financial services company of the incident and that no evidence was found of the stolen data being disseminated online by the threat actors.
+                    
+                    "There was no data security breach of any Morgan Stanley applications," Morgan Stanley said in data breach notification letters sent to impacted individuals.
+                    
+                    "The incident involves files which were in Guidehouse’s possession, including encrypted files from Morgan Stanley."
+                    
+                    However, even though the stolen files were stored in encrypted form on the compromised Guidehouse Accellion FTA server, the threat actors also obtained the decryption key during the attack. The company added that the files stolen from Guidehouse's FTA server did not contain passwords information or credentials that the threat actors could use to gain access to impacted Morgan Stanley customers' financial accounts.
+
+                    "The protection of client data is of the utmost importance and is something we take very seriously," a Morgan Stanley spokesperson told BleepingComputer. "We are in close contact with Guidehouse and are taking steps to mitigate potential risks to clients." While the attackers' identity was not disclosed in Morgan Stanley's data breach notification, a joint statement published by Accellion and Mandiant from February shed more light on the attacks, directly linking them to the FIN11 cybercrime group.
+
+                    The Clop ransomware gang has also used an Accellion FTA zero-day vulnerability (disclosed in December 2020) to steal data from multiple companies.
+                    
+                    Accellion has said that roughly 300 customers used the 20-year-old legacy FTA software, with less than 100 of them being breached in these attacks.
+                    
+                    Starting in January, BleepingComputer has reported multiple data breaches impacting companies and organizations after their Accellion FTA servers were compromised, allowing the cybercrime groups to exfiltrate sensitive information.
+                    
+                    So far, these threat actors have hit energy giant Shell, cybersecurity firm Qualys, the Reserve Bank of New Zealand, Singtel, supermarket giant Kroger, the Office of the Washington State Auditor ("SAO"), the Australian Securities and Investments Commission (ASIC), and multiple universities and other organizations.
+                    
+                    In February, Five Eyes members have also issued a joint security advisory on these attacks and extortion attempts.</p>
+            </section>
+            <hr>
+            <section>
+                <h2>SideCopy Hackers Target Indian Government Officials With New Malware #36</h2>
+                <p>A cyber-espionage group has been observed increasingly targeting Indian government personnel as part of a broad campaign to infect victims with as many as four new custom remote access trojans (RATs), signaling a "boost in their development operations."
+
+                    Attributed to a group tracked as SideCopy, the intrusions culminate in the deployment of a variety of modular plugins, ranging from file enumerators to browser credential stealers and keyloggers (Xeytan and Lavao), Cisco Talos said in a report published Wednesday.
+                    
+                    "Targeting tactics and themes observed in SideCopy campaigns indicate a high degree of similarity to the Transparent Tribe APT (aka APT36) also targeting India," researchers Asheer Malhotra and Justin Thattil said. "These include using decoys posing as operational documents belonging to the military and think tanks and honeytrap-based infections."
+                    
+                    First documented in September 2020 by Indian cybersecurity firm Quick Heal, SideCopy has a history of mimicking infection chains implemented by the Sidewinder APT to deliver its own set of malware — in an attempt to mislead attribution and evade detection — while constantly retooling payloads that include additional exploits in its weaponry after a reconnaissance of the victim's data and environment. The adversary is also believed to be of Pakistani origin, with suspected ties to the Transparent Tribe (aka Mythic Leopard) group, which has been linked to several attacks targeting the Indian military and government entities. Past campaigns undertaken by the threat actor involve using government and military-related lures to single out Indian defense units and armed forces personnel and deliver malware capable of accessing files, clipboard data, terminating processes, and even executing arbitrary commands.
+
+                    The latest wave of attacks leverages a multitude of TTPs, including malicious LNK files and decoy documents, to deliver a combination of bespoke and commercially available commodity RATs such as CetaRAT, DetaRAT, ReverseRAT, MargulasRAT, njRAT, Allakore, ActionRAT, Lillith, and Epicenter RAT. Apart from military themes, SideCopy has also been found employing calls for proposals and job openings related to think tanks in India to target potential victims.
+                    
+                    "The development of new RAT malware is an indication that this group of attackers is rapidly evolving its malware arsenal and post-infection tools since 2019," Malhotra and Thattil noted. The improvements demonstrate an effort to modularize the attack chains, while also demonstrating an increase in sophistication of the group's tactics, the researchers said.
+                    
+                    Besides deploying full-fledged backdoors, SideCopy has also been observed utilizing plugins to carry out specific malicious tasks on the infected endpoint, chief among which is a Golang-based module called "Nodachi" that's designed to conduct reconnaissance and steal files targeting a government-mandated two-factor authentication solution called Kavach, which is required to access email services. The goal, it appears, is to steal access credentials from Indian government employees with a focus on espionage, the researchers said, adding the threat actor developed droppers for MargulasRAT that masqueraded as installers for Kavach on Windows.
+
+                    Malware researcher @0xrb, who is also independently tracking the campaign, reached out to The Hacker News with two more IPs used by SideCopy attackers to connect to the command-and-control server — 103[.]255.7.33 and 115[.]186.190.155 — both of which are located in the city of Islamabad, lending credence to the threat actor's Pakistani provenance.
+                    
+                    "What started as a simple infection vector by SideCopy to deliver a custom RAT (CetaRAT), has evolved into multiple variants of infection chains delivering several RATs," the researchers concluded. "The use of these many infection techniques — ranging from LNK files to self-extracting RAR EXEs and MSI-based installers — is an indication that the actor is aggressively working to infect their victims."</p>
+            </section>
+            <hr>
+            <section>
                 <h2>Details of over 200000 students leaked in cyberattack by DragonForce #35</h2>
                 <p>A pro-Palestinian Malaysian hacker group known as “DragonForce” claimed that it hacked into AcadeME last week, stating “THE LARGEST AND MOST ADVANCED STUDENT AND GRADUATE RECRUITMENT NETWORK IN ISRAEL Hacked By DragonForce Malaysia” in a Telegram message on June 20. The details of about 280,000 students throughout Israel were leaked after a cyberattack targeted the AcadeME company, which services a number of colleges and universities throughout the country, last week.
                     AcadeME helps hundreds of thousands of students find jobs at thousands of companies. A pro-Palestinian Malaysian hacker group known as "DragonForce" claimed that it hacked into AcadeME last week, stating "THE LARGEST AND MOST ADVANCED STUDENT AND GRADUATE RECRUITMENT NETWORK IN ISRAEL Hacked By DragonForce Malaysia" in a Telegram message on June 20.
@@ -800,9 +862,9 @@ The Associated Press reported that Iran blamed the U.S. government for the websi
             <ul>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
-                <li><a href="#"></a>Details of over 200000 students leaked in cyberattack by DragonForce #35</li>
-                <li><a href="#"></a>Ransomware gangs now creating websites to recruit affiliates #34</li>
-                <li><a href="#"></a>REvil ransomware's new Linux encryptor targets ESXi virtual machines #33</li>
+                <li><a href="#"></a>Babuk Ransomware is Back in Action #38</li>
+                <li><a href="#"></a>Morgan Stanley reports data breach after vendor Accellion hack #37</li>
+                <li><a href="#"></a>SideCopy Hackers Target Indian Government Officials With New Malware #36</li>
             </ul>
         </aside>
         <footer>
